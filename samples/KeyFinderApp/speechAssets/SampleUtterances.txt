@@ -1,0 +1,9 @@
+SetKeyLocationIntent my key is located in the {Location}
+SetKeyLocationIntent my key can be found in {Location}
+SetKeyLocationIntent key is in {Location}
+SetKeyLocationIntent {Location}
+ 
+WhereMyKeyIntent where is my key 
+WhereMyKeyIntent locate my key
+WhereMyKeyIntent find my key
+WhereMyKeyIntent key

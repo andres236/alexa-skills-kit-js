@@ -1,0 +1,22 @@
+{
+  "intents": [
+    {
+      "intent": "SetKeyLocationIntent",
+      "slots": [
+      	{
+      		"name" : "Location",
+      		"type" : "LIST_OF_LOCATION"
+      	}
+      ]
+    },
+    {
+      "intent": "WhereMyKeyIntent"
+    },
+    {
+      "intent": "AMAZON.StopIntent"
+    },
+    {
+      "intent": "AMAZON.HelpIntent"
+    }
+  ]
+}

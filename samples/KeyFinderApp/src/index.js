@@ -95,7 +95,7 @@ function onSessionEnded(sessionEndedRequest, session) {
 function getWelcomeResponse(session, callback) {
     // If we wanted to initialize the session to have some attributes we could add those here.
     var sessionAttributes = {}
-    var cardTitle = "Welcome to Key Finder";
+    var cardTitle = "Key Finder - Welcome to Key Finder";
     var speechOutput = "";
     var repromptText = "";
     var shouldEndSession = false;
@@ -124,7 +124,7 @@ function getWelcomeResponse(session, callback) {
  * Sets key in the session and prepares the speech to reply to the user.
  */
 function setKeyInSession(intent, session, callback) {
-    var cardTitle = "Key Location";
+    var cardTitle = "Key Finder - Key Location";
     var keyLocationSlot = intent.slots.Location;
     var repromptText = "";
     var sessionAttributes = {};
@@ -158,7 +158,7 @@ function createKeyLocationAttributes(keyLocation) {
 
 function getKeyFromSession(intent, session, callback) {
     var keyLocation;
-    var cardTitle = "Where is my key?";
+    var cardTitle = "Key Finder - Where is my key?";
     var repromptText = null;
     var sessionAttributes = {};
     var shouldEndSession = false;
@@ -191,9 +191,9 @@ function getKeyFromSession(intent, session, callback) {
 function helpIntent(intent, session, callback) {
 		var keyLocation;
 		var sessionAttributes = {};
-	    var cardTitle = "KeyFinder - Help";
+	    var cardTitle = "Key Finder - Help";
 	    var speechOutput = "Key Finder skill will remember where you last place your key. " +
-	        "To use the Key Finder, try saying, where is my key? , or you can say stop to exit.";
+	        "To use the Key Finder, try saying, where is my key? or you can say stop to exit.";
 	    var repromptText = "Please let me know how I may help you find your key?";
 	        //, " +
 	        //"where is my key?";
@@ -211,7 +211,7 @@ function helpIntent(intent, session, callback) {
 
 function stopIntent(callback) {
 	var sessionAttributes = {};
-    var cardTitle = "Goodbye";
+    var cardTitle = "Key Finder - Goodbye";
     var speechOutput = "Thank you for using Key Finder App. Goodbye";
     var repromptText = "";
     var shouldEndSession = true;

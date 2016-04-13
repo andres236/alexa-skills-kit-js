@@ -75,6 +75,8 @@ function onIntent(intentRequest, session, callback) {
     	helpIntent(intent, session, callback);
     } else if ("AMAZON.StopIntent" === intentName) {
     	stopIntent(callback);
+    } else if ("AMAZON.CancelIntent" === intentName) {
+    	cancelIntent(callback);
     } else {
         throw "Invalid intent";
     }
@@ -210,6 +212,17 @@ function helpIntent(intent, session, callback) {
 }
 
 function stopIntent(callback) {
+	var sessionAttributes = {};
+    var cardTitle = "Key Finder - Goodbye";
+    var speechOutput = "Thank you for using Key Finder App. Goodbye";
+    var repromptText = "";
+    var shouldEndSession = true;
+
+    callback(sessionAttributes,
+	        buildSpeechletResponse(cardTitle, speechOutput, repromptText, shouldEndSession));
+}
+
+function cancelIntent(callback) {
 	var sessionAttributes = {};
     var cardTitle = "Key Finder - Goodbye";
     var speechOutput = "Thank you for using Key Finder App. Goodbye";

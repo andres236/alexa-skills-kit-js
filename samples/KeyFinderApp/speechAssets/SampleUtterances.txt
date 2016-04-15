@@ -1,6 +1,8 @@
+SetKeyLocationIntent my key is found in the {Location}
 SetKeyLocationIntent my key is located in the {Location}
-SetKeyLocationIntent my key can be found in {Location}
-SetKeyLocationIntent key is in {Location}
+SetKeyLocationIntent my key is in {Location}
+SetKeyLocationIntent I put my key in the {Location}
+SetKeyLocationIntent I placed my key in the {Location}
 SetKeyLocationIntent {Location}
  
 WhereMyKeyIntent where is my key 
